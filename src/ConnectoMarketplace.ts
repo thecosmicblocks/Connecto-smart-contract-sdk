@@ -471,7 +471,7 @@ export const connectoMarketplaceAbi = [
           },
         ],
       },
-      { name: '_closeFor', internalType: 'address', type: 'address' },
+      { name: 'closeFor_', internalType: 'address', type: 'address' },
     ],
     name: 'closeAuction',
     outputs: [],

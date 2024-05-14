@@ -10,11 +10,6 @@ import {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 export const connectoProtocolAbi = [
-  {
-    type: 'error',
-    inputs: [{ name: 'amount', internalType: 'uint256', type: 'uint256' }],
-    name: 'InvalidAmount',
-  },
   { type: 'error', inputs: [], name: 'InvalidInitialization' },
   { type: 'error', inputs: [], name: 'NotInitializing' },
   {
@@ -28,11 +23,6 @@ export const connectoProtocolAbi = [
     name: 'OwnableUnauthorizedAccount',
   },
   { type: 'error', inputs: [], name: 'TransferFailed' },
-  {
-    type: 'error',
-    inputs: [{ name: 'amount', internalType: 'uint256', type: 'uint256' }],
-    name: 'TransferFailed',
-  },
   {
     type: 'event',
     anonymous: false,
@@ -122,7 +112,7 @@ export const connectoProtocolAbi = [
     ],
     name: 'donate',
     outputs: [],
-    stateMutability: 'nonpayable',
+    stateMutability: 'payable',
   },
   {
     type: 'function',
