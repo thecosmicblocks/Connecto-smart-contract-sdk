@@ -39,6 +39,31 @@ export const connectoNftManagerAbi = [
     anonymous: false,
     inputs: [
       {
+        name: 'owner',
+        internalType: 'address',
+        type: 'address',
+        indexed: false,
+      },
+      {
+        name: 'collectionAddress',
+        internalType: 'address',
+        type: 'address',
+        indexed: false,
+      },
+      {
+        name: 'tokenIds',
+        internalType: 'uint256[]',
+        type: 'uint256[]',
+        indexed: false,
+      },
+    ],
+    name: 'ExchangeToGift',
+  },
+  {
+    type: 'event',
+    anonymous: false,
+    inputs: [
+      {
         name: 'version',
         internalType: 'uint64',
         type: 'uint64',
@@ -94,12 +119,24 @@ export const connectoNftManagerAbi = [
       { name: 'description', internalType: 'string', type: 'string' },
       { name: 'symbol', internalType: 'string', type: 'string' },
       { name: 'baseURI', internalType: 'string', type: 'string' },
-      { name: 'orderHash', internalType: 'string', type: 'string' },
+      { name: 'orderId', internalType: 'string', type: 'string' },
       { name: 'signature', internalType: 'bytes', type: 'bytes' },
     ],
     name: 'createNFTCollection',
     outputs: [],
     stateMutability: 'payable',
+  },
+  {
+    type: 'function',
+    inputs: [
+      { name: 'collectionAddr_', internalType: 'address', type: 'address' },
+      { name: 'tokenIds_', internalType: 'uint256[]', type: 'uint256[]' },
+      { name: 'orderId', internalType: 'string', type: 'string' },
+      { name: 'signature', internalType: 'bytes', type: 'bytes' },
+    ],
+    name: 'exchangeToGift',
+    outputs: [],
+    stateMutability: 'nonpayable',
   },
   {
     type: 'function',
@@ -143,7 +180,7 @@ export const connectoNftManagerAbi = [
           },
         ],
       },
-      { name: 'orderHash', internalType: 'string', type: 'string' },
+      { name: 'orderId', internalType: 'string', type: 'string' },
       { name: 'signature', internalType: 'bytes', type: 'bytes' },
     ],
     name: 'mintBulkCrossToCollection',
@@ -172,7 +209,7 @@ export const connectoNftManagerAbi = [
           { name: 'value', internalType: 'bytes', type: 'bytes' },
         ],
       },
-      { name: 'orderHash', internalType: 'string', type: 'string' },
+      { name: 'orderId', internalType: 'string', type: 'string' },
       { name: 'signature', internalType: 'bytes', type: 'bytes' },
     ],
     name: 'mintCrossToCollection',
@@ -184,7 +221,7 @@ export const connectoNftManagerAbi = [
     inputs: [
       { name: 'collectionAddr', internalType: 'address', type: 'address' },
       { name: 'to', internalType: 'address', type: 'address' },
-      { name: 'orderHash', internalType: 'string', type: 'string' },
+      { name: 'orderId', internalType: 'string', type: 'string' },
       { name: 'signature', internalType: 'bytes', type: 'bytes' },
     ],
     name: 'mintToCollection',
@@ -262,6 +299,15 @@ export const useWriteConnectoNftManagerCreateNftCollection =
   /*#__PURE__*/ createUseWriteContract({
     abi: connectoNftManagerAbi,
     functionName: 'createNFTCollection',
+  })
+
+/**
+ * Wraps __{@link useWriteContract}__ with `abi` set to __{@link connectoNftManagerAbi}__ and `functionName` set to `"exchangeToGift"`
+ */
+export const useWriteConnectoNftManagerExchangeToGift =
+  /*#__PURE__*/ createUseWriteContract({
+    abi: connectoNftManagerAbi,
+    functionName: 'exchangeToGift',
   })
 
 /**
@@ -352,6 +398,15 @@ export const useSimulateConnectoNftManagerCreateNftCollection =
   })
 
 /**
+ * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link connectoNftManagerAbi}__ and `functionName` set to `"exchangeToGift"`
+ */
+export const useSimulateConnectoNftManagerExchangeToGift =
+  /*#__PURE__*/ createUseSimulateContract({
+    abi: connectoNftManagerAbi,
+    functionName: 'exchangeToGift',
+  })
+
+/**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link connectoNftManagerAbi}__ and `functionName` set to `"initialize"`
  */
 export const useSimulateConnectoNftManagerInitialize =
@@ -428,6 +483,15 @@ export const useSimulateConnectoNftManagerTransferOwnership =
  */
 export const useWatchConnectoNftManagerEvent =
   /*#__PURE__*/ createUseWatchContractEvent({ abi: connectoNftManagerAbi })
+
+/**
+ * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link connectoNftManagerAbi}__ and `eventName` set to `"ExchangeToGift"`
+ */
+export const useWatchConnectoNftManagerExchangeToGiftEvent =
+  /*#__PURE__*/ createUseWatchContractEvent({
+    abi: connectoNftManagerAbi,
+    eventName: 'ExchangeToGift',
+  })
 
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link connectoNftManagerAbi}__ and `eventName` set to `"Initialized"`

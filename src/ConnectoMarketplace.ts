@@ -667,90 +667,90 @@ export const useReadConnectoMarketplace = /*#__PURE__*/ createUseReadContract({
  */
 export const useReadConnectoMarketplaceMaxBps =
   /*#__PURE__*/ createUseReadContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'MAX_BPS',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'MAX_BPS',
+  })
 
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"bidBufferBps"`
  */
 export const useReadConnectoMarketplaceBidBufferBps =
   /*#__PURE__*/ createUseReadContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'bidBufferBps',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'bidBufferBps',
+  })
 
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"contractURI"`
  */
 export const useReadConnectoMarketplaceContractUri =
   /*#__PURE__*/ createUseReadContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'contractURI',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'contractURI',
+  })
 
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"getPlatformFeeInfo"`
  */
 export const useReadConnectoMarketplaceGetPlatformFeeInfo =
   /*#__PURE__*/ createUseReadContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'getPlatformFeeInfo',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'getPlatformFeeInfo',
+  })
 
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"offers"`
  */
 export const useReadConnectoMarketplaceOffers =
   /*#__PURE__*/ createUseReadContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'offers',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'offers',
+  })
 
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"owner"`
  */
 export const useReadConnectoMarketplaceOwner =
   /*#__PURE__*/ createUseReadContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'owner',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'owner',
+  })
 
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"returnBalance"`
  */
 export const useReadConnectoMarketplaceReturnBalance =
   /*#__PURE__*/ createUseReadContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'returnBalance',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'returnBalance',
+  })
 
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"timeBuffer"`
  */
 export const useReadConnectoMarketplaceTimeBuffer =
   /*#__PURE__*/ createUseReadContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'timeBuffer',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'timeBuffer',
+  })
 
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"totalListings"`
  */
 export const useReadConnectoMarketplaceTotalListings =
   /*#__PURE__*/ createUseReadContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'totalListings',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'totalListings',
+  })
 
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"winningBid"`
  */
 export const useReadConnectoMarketplaceWinningBid =
   /*#__PURE__*/ createUseReadContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'winningBid',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'winningBid',
+  })
 
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__
@@ -764,90 +764,90 @@ export const useWriteConnectoMarketplace = /*#__PURE__*/ createUseWriteContract(
  */
 export const useWriteConnectoMarketplaceAcceptOffer =
   /*#__PURE__*/ createUseWriteContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'acceptOffer',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'acceptOffer',
+  })
 
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"buy"`
  */
 export const useWriteConnectoMarketplaceBuy =
   /*#__PURE__*/ createUseWriteContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'buy',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'buy',
+  })
 
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"claim"`
  */
 export const useWriteConnectoMarketplaceClaim =
   /*#__PURE__*/ createUseWriteContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'claim',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'claim',
+  })
 
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"closeAuction"`
  */
 export const useWriteConnectoMarketplaceCloseAuction =
   /*#__PURE__*/ createUseWriteContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'closeAuction',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'closeAuction',
+  })
 
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"initialize"`
  */
 export const useWriteConnectoMarketplaceInitialize =
   /*#__PURE__*/ createUseWriteContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'initialize',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'initialize',
+  })
 
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"offer"`
  */
 export const useWriteConnectoMarketplaceOffer =
   /*#__PURE__*/ createUseWriteContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'offer',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'offer',
+  })
 
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"renounceOwnership"`
  */
 export const useWriteConnectoMarketplaceRenounceOwnership =
   /*#__PURE__*/ createUseWriteContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'renounceOwnership',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'renounceOwnership',
+  })
 
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"setAuctionBuffers"`
  */
 export const useWriteConnectoMarketplaceSetAuctionBuffers =
   /*#__PURE__*/ createUseWriteContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'setAuctionBuffers',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'setAuctionBuffers',
+  })
 
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"setPlatformFeeInfo"`
  */
 export const useWriteConnectoMarketplaceSetPlatformFeeInfo =
   /*#__PURE__*/ createUseWriteContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'setPlatformFeeInfo',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'setPlatformFeeInfo',
+  })
 
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"transferOwnership"`
  */
 export const useWriteConnectoMarketplaceTransferOwnership =
   /*#__PURE__*/ createUseWriteContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'transferOwnership',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'transferOwnership',
+  })
 
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__
@@ -860,90 +860,90 @@ export const useSimulateConnectoMarketplace =
  */
 export const useSimulateConnectoMarketplaceAcceptOffer =
   /*#__PURE__*/ createUseSimulateContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'acceptOffer',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'acceptOffer',
+  })
 
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"buy"`
  */
 export const useSimulateConnectoMarketplaceBuy =
   /*#__PURE__*/ createUseSimulateContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'buy',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'buy',
+  })
 
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"claim"`
  */
 export const useSimulateConnectoMarketplaceClaim =
   /*#__PURE__*/ createUseSimulateContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'claim',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'claim',
+  })
 
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"closeAuction"`
  */
 export const useSimulateConnectoMarketplaceCloseAuction =
   /*#__PURE__*/ createUseSimulateContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'closeAuction',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'closeAuction',
+  })
 
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"initialize"`
  */
 export const useSimulateConnectoMarketplaceInitialize =
   /*#__PURE__*/ createUseSimulateContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'initialize',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'initialize',
+  })
 
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"offer"`
  */
 export const useSimulateConnectoMarketplaceOffer =
   /*#__PURE__*/ createUseSimulateContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'offer',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'offer',
+  })
 
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"renounceOwnership"`
  */
 export const useSimulateConnectoMarketplaceRenounceOwnership =
   /*#__PURE__*/ createUseSimulateContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'renounceOwnership',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'renounceOwnership',
+  })
 
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"setAuctionBuffers"`
  */
 export const useSimulateConnectoMarketplaceSetAuctionBuffers =
   /*#__PURE__*/ createUseSimulateContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'setAuctionBuffers',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'setAuctionBuffers',
+  })
 
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"setPlatformFeeInfo"`
  */
 export const useSimulateConnectoMarketplaceSetPlatformFeeInfo =
   /*#__PURE__*/ createUseSimulateContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'setPlatformFeeInfo',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'setPlatformFeeInfo',
+  })
 
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `functionName` set to `"transferOwnership"`
  */
 export const useSimulateConnectoMarketplaceTransferOwnership =
   /*#__PURE__*/ createUseSimulateContract({
-  abi: connectoMarketplaceAbi,
-  functionName: 'transferOwnership',
-})
+    abi: connectoMarketplaceAbi,
+    functionName: 'transferOwnership',
+  })
 
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link connectoMarketplaceAbi}__
@@ -956,105 +956,105 @@ export const useWatchConnectoMarketplaceEvent =
  */
 export const useWatchConnectoMarketplaceAuctionBuffersUpdatedEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
-  abi: connectoMarketplaceAbi,
-  eventName: 'AuctionBuffersUpdated',
-})
+    abi: connectoMarketplaceAbi,
+    eventName: 'AuctionBuffersUpdated',
+  })
 
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `eventName` set to `"AuctionClosed"`
  */
 export const useWatchConnectoMarketplaceAuctionClosedEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
-  abi: connectoMarketplaceAbi,
-  eventName: 'AuctionClosed',
-})
+    abi: connectoMarketplaceAbi,
+    eventName: 'AuctionClosed',
+  })
 
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `eventName` set to `"FlatPlatformFeeUpdated"`
  */
 export const useWatchConnectoMarketplaceFlatPlatformFeeUpdatedEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
-  abi: connectoMarketplaceAbi,
-  eventName: 'FlatPlatformFeeUpdated',
-})
+    abi: connectoMarketplaceAbi,
+    eventName: 'FlatPlatformFeeUpdated',
+  })
 
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `eventName` set to `"Initialized"`
  */
 export const useWatchConnectoMarketplaceInitializedEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
-  abi: connectoMarketplaceAbi,
-  eventName: 'Initialized',
-})
+    abi: connectoMarketplaceAbi,
+    eventName: 'Initialized',
+  })
 
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `eventName` set to `"ListingAdded"`
  */
 export const useWatchConnectoMarketplaceListingAddedEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
-  abi: connectoMarketplaceAbi,
-  eventName: 'ListingAdded',
-})
+    abi: connectoMarketplaceAbi,
+    eventName: 'ListingAdded',
+  })
 
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `eventName` set to `"ListingRemoved"`
  */
 export const useWatchConnectoMarketplaceListingRemovedEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
-  abi: connectoMarketplaceAbi,
-  eventName: 'ListingRemoved',
-})
+    abi: connectoMarketplaceAbi,
+    eventName: 'ListingRemoved',
+  })
 
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `eventName` set to `"ListingUpdated"`
  */
 export const useWatchConnectoMarketplaceListingUpdatedEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
-  abi: connectoMarketplaceAbi,
-  eventName: 'ListingUpdated',
-})
+    abi: connectoMarketplaceAbi,
+    eventName: 'ListingUpdated',
+  })
 
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `eventName` set to `"NewOffer"`
  */
 export const useWatchConnectoMarketplaceNewOfferEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
-  abi: connectoMarketplaceAbi,
-  eventName: 'NewOffer',
-})
+    abi: connectoMarketplaceAbi,
+    eventName: 'NewOffer',
+  })
 
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `eventName` set to `"NewSale"`
  */
 export const useWatchConnectoMarketplaceNewSaleEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
-  abi: connectoMarketplaceAbi,
-  eventName: 'NewSale',
-})
+    abi: connectoMarketplaceAbi,
+    eventName: 'NewSale',
+  })
 
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `eventName` set to `"OwnershipTransferred"`
  */
 export const useWatchConnectoMarketplaceOwnershipTransferredEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
-  abi: connectoMarketplaceAbi,
-  eventName: 'OwnershipTransferred',
-})
+    abi: connectoMarketplaceAbi,
+    eventName: 'OwnershipTransferred',
+  })
 
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `eventName` set to `"PlatformFeeInfoUpdated"`
  */
 export const useWatchConnectoMarketplacePlatformFeeInfoUpdatedEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
-  abi: connectoMarketplaceAbi,
-  eventName: 'PlatformFeeInfoUpdated',
-})
+    abi: connectoMarketplaceAbi,
+    eventName: 'PlatformFeeInfoUpdated',
+  })
 
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link connectoMarketplaceAbi}__ and `eventName` set to `"PlatformFeeTypeUpdated"`
  */
 export const useWatchConnectoMarketplacePlatformFeeTypeUpdatedEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
-  abi: connectoMarketplaceAbi,
-  eventName: 'PlatformFeeTypeUpdated',
-})
+    abi: connectoMarketplaceAbi,
+    eventName: 'PlatformFeeTypeUpdated',
+  })
