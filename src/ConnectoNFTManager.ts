@@ -141,6 +141,16 @@ export const connectoNftManagerAbi = [
   {
     type: 'function',
     inputs: [
+      { name: 'collection_', internalType: 'address', type: 'address' },
+      { name: 'wallet_', internalType: 'address', type: 'address' },
+    ],
+    name: 'getAllTokenOfUser',
+    outputs: [{ name: 'nftIds', internalType: 'uint256[]', type: 'uint256[]' }],
+    stateMutability: 'view',
+  },
+  {
+    type: 'function',
+    inputs: [
       { name: 'collectionHelper_', internalType: 'address', type: 'address' },
       { name: 'connectoToken_', internalType: 'address', type: 'address' },
       { name: 'treasuryWallet_', internalType: 'address', type: 'address' },
@@ -275,6 +285,15 @@ export const connectoNftManagerAbi = [
 export const useReadConnectoNftManager = /*#__PURE__*/ createUseReadContract({
   abi: connectoNftManagerAbi,
 })
+
+/**
+ * Wraps __{@link useReadContract}__ with `abi` set to __{@link connectoNftManagerAbi}__ and `functionName` set to `"getAllTokenOfUser"`
+ */
+export const useReadConnectoNftManagerGetAllTokenOfUser =
+  /*#__PURE__*/ createUseReadContract({
+    abi: connectoNftManagerAbi,
+    functionName: 'getAllTokenOfUser',
+  })
 
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link connectoNftManagerAbi}__ and `functionName` set to `"owner"`
